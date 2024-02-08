@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>signupp</title>
+<style>
+#img1{
+position:absolute;
+top:5.5px;
+height:107px;
+width:120px;
+}
+h1{
+text-align:center;
+font-size:80px;
+font-family:Bodoni MT;
+color:white;
+text-shadow:2px 2px 2px black;
+background-color:blue;
+height:15.5%;
+}
+h2{text-align:center;
+font-size:40px;}
+{box-sizing: border-box}
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+button:hover {
+  opacity:1;
+}
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+.container {
+  padding: 16px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+.topnav {
+  overflow: hidden;
+  position:absolute;
+  top:120px;
+}
+.topnav{background-color:grey;}
+.topnav a {
+  float: left;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: red;
+  color: black;
+}
+.topnav a.active {
+  background-color:green;
+  color: white;
+}
+</style>
+</head>
+<body>
+<img id="img1" src="image12.jpg">
+<h1>OUR BANK</h1>
+<div class="topnav">
+  <a class="active" href="menu bar.html">Home</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+</div>
+
+<form  style="border:1px solid #ccc">
+  <div class="container">
+    <h2>Sign Up</h2>
+    <p>Please fill in this form to Signup.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+     
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+	
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button><br>
+	  <a href="password area.html"><b>Forget Password</a>
+    </div>
+  </div>
+</form>
+</body>
+</html>
